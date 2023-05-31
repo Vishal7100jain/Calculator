@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.Calculator {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    height: 80vh;
+    grid-auto-columns: 232.2px;
+    background-color: rgb(46, 76, 133);
+    border-radius: 20px;
+}
+
+#result {
+    display: grid;
+    align-items: flex-end;
+    color: aliceblue;
+    font-size: xx-large;
+    padding-left: 5px;
+}
+
+#display {
+    background-color: rgb(46, 76, 133);
+    border: 1px solid rgb(46, 76, 133);
+    color: aliceblue;
+    font-size: xx-large;
+    width: 213px;
+    scroll-snap-type: x mandatory;
+}
+
+.all-button {
+    display: grid;
+    grid-template-columns: repeat(4, 3rem);
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-gap: 7px;
+    padding: 0.6em;
+}
+
+.button {
+    border-radius: 50%;
+    background-color: rgb(76, 74, 74);
+    border: 1px solid rgb(76, 74, 74);
+    color: aliceblue;
+    font-size: larger;
+}
+
+.button:hover {
+    background-color: rgb(48, 46, 46);
+    border: 1px solid rgb(48, 46, 46);
+}
+
+#History {
+    font-size: xx-small;
+}
+
+.operator{
+    font-size: larger;
+    background-color: rgb(207, 196, 32);
+}
+
+.operator:hover{
+    background-color: rgb(123, 115, 0);
+}
+
+.funcOperator{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.funcOperator:hover{
+    background-color: rgb(172, 164, 164);
+    border: 1px solid rgb(172, 164, 164);
+}
+
+#historyStore {
+    display: grid;
+    grid-row-start:1 ;
+    grid-row-end:2;
+    color: aliceblue;
+    padding-top: 7px;
+    padding-left: 7px;
+    overflow-y: scroll;
+}
